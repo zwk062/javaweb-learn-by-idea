@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<img id="light" src="1.png"> <br>
+
+<div class="cls">传智教育</div>   <br>
+<div class="cls">黑马程序员</div> <br>
+
+<input type="checkbox" name="hobby"> 电影
+<input type="checkbox" name="hobby"> 旅游
+<input type="checkbox" name="hobby"> 游戏
+<br>
+
+<script>
+     let img = document.getElementById("light");
+     img.src="img.png";
+    // alert(img);
+     let imgs = document.getElementsByTagName("div");
+    // //alert(imgs.length);
+     for (let i = 0; i <imgs.length; i++) {
+           imgs[i].style.color= "red";
+           imgs[i].innerHTML = "hehe";
+     }
+     let elementsByName = document.getElementsByName("hobby");
+    for (let i = 0; i < elementsByName.length; i++) {
+        elementsByName[i].checked = true;
+    }
+</script>
+</body>
+</html>
